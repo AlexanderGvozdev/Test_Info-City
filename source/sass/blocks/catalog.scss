@@ -53,6 +53,10 @@
     grid-template-columns: repeat(3, 1fr);
     margin-left: 70px;
   }
+
+  @media (max-width: $tablet-width-max) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .catalog__list-item {
