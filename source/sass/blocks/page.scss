@@ -1,0 +1,14 @@
+.page {
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
+.page__body {
+  font-family: "SFUIDisplay", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: white;
+  color: #151515;
+  margin: 0;
+  word-break: break-word;
+}
