@@ -13,6 +13,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $desktop-width) {
+    margin-top: -8px;
+  }
 }
 
 .page-header__contacts {
@@ -73,12 +77,17 @@
 .page-header__row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
 .page-header__name-wrapper {
   margin-left: -50px;
+
+  @media (max-width: $desktop-width) {
+    flex-basis: 40%;
+  }
 }
 
 .page-header__name-wrapper h2 {
@@ -104,6 +113,10 @@
   text-transform: uppercase;
   margin-top: 24px;
   transform: translateX(-11px);
+
+  @media (max-width: $desktop-width) {
+    flex-basis: 40%;
+  }
 }
 
 .page-header__phone {
@@ -141,20 +154,35 @@
   transform: translateX(-69px);
   padding-left: 39px;
   padding-top: 4px;
+
+  @media (max-width: $desktop-width) {
+    transform: none;
+    margin-left: 2px;
+  }
 }
 
 .page-header__input-wrapper button {
   width: 50px;
-  height: 50px;
+  height: 52px;
   background-color: #06aab5;
   border: none;
   position: absolute;
   top: 3px;
   right: 68px;
+
+  @media (max-width: $desktop-width) {
+    right: 1px;
+  }
 }
 
 .page-header__social {
   transform: translateX(-26px);
+
+  @media (max-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    transform: translateX(-88px);
+  }
 }
 
 .page-header__social a {

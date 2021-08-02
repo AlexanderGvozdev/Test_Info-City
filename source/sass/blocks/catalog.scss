@@ -48,6 +48,11 @@
   gap: 30px;
   margin-top: 45px;
   padding-bottom: 105px;
+
+  @media (max-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 70px;
+  }
 }
 
 .catalog__list-item {

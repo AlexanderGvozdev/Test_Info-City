@@ -5,6 +5,10 @@
   align-items: center;
   padding-left: 0;
 
+  @media (max-width: $desktop-width) {
+    width: 668px;
+  }
+
   @media (max-width: $tablet-width-max) {
     text-align: center;
     padding: 0;
@@ -40,6 +44,10 @@
   flex-wrap: wrap;
   align-items: center;
   margin-left: 40px;
+
+  @media (max-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .nav-list-footer__item {
