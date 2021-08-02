@@ -39,6 +39,11 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  margin-left: 40px;
+}
+
+.nav-list-footer__item {
+  margin-right: 20px;
 }
 
 .nav-list-footer__item a {
@@ -48,4 +53,5 @@
   font-size: 14px;
   line-height: 32px;
   font-weight: 700;
+  text-transform: uppercase;
 }

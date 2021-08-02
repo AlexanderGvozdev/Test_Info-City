@@ -61,6 +61,7 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .page-header__logo {
@@ -84,7 +85,8 @@
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
-  margin-top: 11px;
+  margin-top: 14px;
+  text-transform: uppercase;
 }
 
 .page-header__name-wrapper p {
@@ -92,14 +94,16 @@
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
-  margin-top: -23px;
-  margin-left: -5px;
+  margin-top: -26px;
 }
 
 .page-header__slogan {
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 24px;
+  transform: translateX(-11px);
 }
 
 .page-header__phone {
@@ -108,12 +112,15 @@
   font-weight: 500;
   text-decoration: none;
   color: black;
+  transform: translateX(-39px);
 }
 
 .page-header__bascket h3 {
   font-size: 14px;
   line-height: 17px;
   font-weight: 700;
+  text-transform: uppercase;
+  transform: translateY(9px);
 }
 
 .page-header__bascket p {
@@ -128,8 +135,12 @@
 }
 
 .page-header__input-wrapper input {
-  width: 332px;
+  width: 320px;
   height: 44px;
+  margin-top: 2px;
+  transform: translateX(-69px);
+  padding-left: 39px;
+  padding-top: 4px;
 }
 
 .page-header__input-wrapper button {
@@ -138,8 +149,8 @@
   background-color: #06aab5;
   border: none;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 3px;
+  right: 68px;
 }
 
 .page-header__social {

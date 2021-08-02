@@ -21,6 +21,10 @@
   margin: 0 auto;
   padding: 0 210px;
 
+  @media (max-width: $desktop-width) {
+    padding: 0 50px;
+  }
+
   @media (max-width: $tablet-width-max) {
     padding: 0 20px;
   }
