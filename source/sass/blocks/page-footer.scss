@@ -1,0 +1,14 @@
+.page-footer {
+  background-color: #2d3e4f;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__name-wrapper {
+  color: white;
+}

@@ -1,0 +1,21 @@
+.copyright {
+  color: #929292;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: #929292;
+}
+
+.copyright__property {
+  color: white;
+  text-decoration: none;
+}
+
+.copyright__privacy-policy {
+  color: #929292;
+}

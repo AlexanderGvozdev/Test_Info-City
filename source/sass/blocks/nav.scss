@@ -3,7 +3,7 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 31px;
+  padding-top: 5px;
 
   @media (max-width: $tablet-width-max) {
     text-align: center;
@@ -15,6 +15,7 @@
 .nav__list a {
   text-decoration: none;
   color: inherit;
+  text-transform: uppercase;
 
   @media (max-width: $tablet-width-max) {
     .nav--closed .nav__item {
@@ -22,7 +23,6 @@
       display: block;
       padding: 15px 0;
       color: white;
-      text-transform: uppercase;
       text-decoration: none;
       border-top: 1px solid rgba(255, 255, 255, 0.15);
       border-bottom: 1px solid black;
@@ -31,7 +31,7 @@
 }
 
 .nav__item {
-  margin-right: 99px;
+  margin-right: 5px;
   padding: 0;
 
   &:last-child {
@@ -138,4 +138,17 @@
 
 .nav--opened .nav__item {
   background-color: white;
+}
+
+.nav-list-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-list-footer__item a {
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
 }
