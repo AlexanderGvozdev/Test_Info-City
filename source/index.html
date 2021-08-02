@@ -10,12 +10,11 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--closed">
+  <header class="page-header">
       <div class="container">
         <div class="page-header__container">
           <div class="page-header__nav-container">
-            <nav class="nav nav--closed nav--nojs">
-              <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <nav class="nav">
                 <ul class="nav__list list-reset">
                   <li class="nav__item nav__item--active">
                     <a href="#">
@@ -79,7 +78,12 @@
             <p class="page-header__slogan">рыбачте с нами!</p>
             <div class="page-header__input-wrapper">
               <input placeholder="Поиск по сайту">
-              <button>1</button>
+              <button>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="8.5" cy="8.5" r="7" stroke="white" stroke-width="3"/>
+                  <path d="M14.0513 14L17.7434 17.6466" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
             </div>
             <a href="tel:+79961647124" class="page-header__phone">
               +7 996 164 71 24
@@ -97,8 +101,8 @@
     <section class="slider">
       <div class="slider__wrapper">
         <div class="slider__nav">
-          <a href="#" class="slider__nav-item">главная</a>
-          <a class="slider__nav-item--active">каталог товаров</a>
+          <a href="#" class="slider__nav-item">Главная</a>
+          <a class="slider__nav-item--active">Каталог товаров</a>
         </div>
         <h3>каталог товаров</h3>
       </div>
@@ -113,34 +117,41 @@
       <div class="container">
         <div class="catalog__header">
           <h3>акции</h3>
-          <p>все акции<button>></button></p>
+          <p>все акции
+            <button>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="14" cy="14" r="14" fill="#FC822A"/>
+                <path d="M13 11L16 14L13 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </p>
         </div>
         <div class="catalog__list">
           <div class="catalog__list-item">
             <img src="img/catalog1.png" width="243" height="180" alt="фото товара">
-            <p class="catalog__list-item-desc">Катушка рыболовная
-              для удочки Fishin Power
+            <p class="catalog__list-item-desc">Катушка рыболовная<br>
+              для удочки Fishin Power<br>
               со стабилизатором</p>
             <p class="catalog__list-item-price">2 500 р.</p>
             <a href="#">подробнее</a>
           </div>
           <div class="catalog__list-item">
             <img src="img/catalog2.png" width="243" height="180" alt="фото товара">
-            <p class="catalog__list-item-desc">Рыболовная приманка
-              для ловли щуки и сомов
+            <p class="catalog__list-item-desc">Рыболовная приманка<br>
+              для ловли щуки и сомов<br>
               титановая</p>
             <p class="catalog__list-item-price">680 р.</p>
             <a href="#">подробнее</a>
           </div>
           <div class="catalog__list-item">
             <img src="img/catalog3.png" width="243" height="180" alt="фото товара">
-            <p class="catalog__list-item-desc">Форель свежемороженная атлантическая</p>
+            <p class="catalog__list-item-desc">Форель свежемороженная<br> атлантическая</p>
             <p class="catalog__list-item-price">2 600 р.</p>
             <a href="#">подробнее</a>
           </div>
           <div class="catalog__list-item">
             <img src="img/catalog4.png" width="243" height="180" alt="фото товара">
-            <p class="catalog__list-item-desc">Ящик для рыболовных
+            <p class="catalog__list-item-desc">Ящик для рыболовных<br>
               снастей Fishing cool strong</p>
             <p class="catalog__list-item-price">3 700 р.</p>
             <a href="#">подробнее</a>
@@ -216,7 +227,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/main.min.js"></script>
 </body>
 
 </html>

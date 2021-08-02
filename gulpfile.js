@@ -6,7 +6,6 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
-const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
 const sync = require("browser-sync").create();
@@ -36,18 +35,6 @@ const html = () => {
   return gulp.src("source/*.html")
     .pipe(gulp.dest("build"));
 }
-
-// Scripts
-
-const scripts = () => {
-  return gulp.src("source/js/main.js")
-    .pipe(terser())
-    .pipe(rename("main.min.js"))
-    .pipe(gulp.dest("build/js"))
-    .pipe(sync.stream());
-}
-
-exports.scripts = scripts;
 
 // Images
 
@@ -120,7 +107,6 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(stylesmin));
-  gulp.watch("source/js/main.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
@@ -133,7 +119,6 @@ const build = gulp.series(
   gulp.parallel(
     stylesmin,
     html,
-    scripts,
   ),
 );
 
@@ -149,7 +134,6 @@ exports.default = gulp.series(
   gulp.parallel(
     stylesmin,
     html,
-    scripts,
   ),
   gulp.series(
     server,

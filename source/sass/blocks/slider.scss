@@ -1,11 +1,12 @@
 .slider {
   position: relative;
+  background-color: #f4f4f4;
 }
 
 .slider__wrapper {
   position: absolute;
-  top: 1px;
-  left: 2px;
+  top: 39px;
+  left: 213px;
 }
 
 .slider img {
@@ -29,6 +30,7 @@
   line-height: 21px;
   font-weight: 400;
   text-decoration: none;
+  margin-right: 26px;
 }
 
 .slider h3 {
@@ -36,4 +38,5 @@
   line-height: 57px;
   font-weight: 700;
   color: white;
+  margin-top: 2px;
 }

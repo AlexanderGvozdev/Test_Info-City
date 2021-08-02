@@ -1,3 +1,7 @@
+.page-header {
+  margin-bottom: 10px;
+}
+
 .page-header__container {
   position: relative;
   display: grid;
@@ -20,19 +24,36 @@
 .page-header__contacts button {
   border: none;
   background-color: transparent;
+  transform: translateX(-80px);
 }
 
 .page-header__contacts p {
   color: #008a93;
-  text-decoration: underline;
+  border-bottom: 1px dashed #008a93;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
+  position: relative;
+}
+
+.page-header__contacts p::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: -27px;
+  width: 18px;
+  height: 18px;
+  background: url("../img/icon-men.svg");
 }
 
 .page-header__contacts-link {
-  background-color: #008a93;
+  background-color: #06aab5;
   text-decoration: none;
+  width: 160px;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 20px;
+  transform: translateX(-50px);
 }
 
 .page-header__contacts-link span {
@@ -44,9 +65,7 @@
 
 .page-header__logo {
   display: block;
-  margin-left: 1px;
-  padding-top: 7px;
-  padding-bottom: 12px;
+  margin-top: 15px;
   width: 47px;
 }
 
@@ -57,10 +76,15 @@
   justify-content: space-between;
 }
 
+.page-header__name-wrapper {
+  margin-left: -50px;
+}
+
 .page-header__name-wrapper h2 {
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
+  margin-top: 11px;
 }
 
 .page-header__name-wrapper p {
@@ -68,6 +92,8 @@
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
+  margin-top: -23px;
+  margin-left: -5px;
 }
 
 .page-header__slogan {
@@ -97,7 +123,29 @@
   color: #5c5c5c;
 }
 
+.page-header__input-wrapper {
+  position: relative;
+}
+
 .page-header__input-wrapper input {
   width: 332px;
   height: 44px;
+}
+
+.page-header__input-wrapper button {
+  width: 50px;
+  height: 50px;
+  background-color: #06aab5;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.page-header__social {
+  transform: translateX(-26px);
+}
+
+.page-header__social a {
+  margin-right: 20px;
 }

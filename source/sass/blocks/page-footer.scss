@@ -11,6 +11,7 @@
 
 .page-footer__name-wrapper {
   color: white;
+  margin-left: -97px;
 }
 
 .page-footer__name-wrapper h3 {
@@ -31,4 +32,12 @@
   font-weight: 500;
   text-decoration: none;
   color: white;
+}
+
+.page-footer__logo {
+  margin-top: 44px;
+}
+
+.page-footer__social a {
+  margin-right: 11px;
 }
