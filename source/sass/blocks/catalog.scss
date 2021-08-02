@@ -6,6 +6,30 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-bottom: 1px solid #d1d1d1;
+  position: relative;
+}
+
+.catalog__header::after {
+  position: absolute;
+  content: "";
+  left: 1px;
+  bottom: 1px;
+  width: 121px;
+  height: 4px;
+  background-color: #06aab5;
+}
+
+.catalog__header h3 {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.catalog__header p {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
 }
 
 .catalog__list {
@@ -17,13 +41,51 @@
 .catalog__list-item {
   background-color: white;
   width: 300px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .catalog__list-item img {
   margin-left: auto;
   margin-right: auto;
+}
+
+.catalog__list-item::before {
+  position: absolute;
+  content: "акция";
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 6px;
+  top: 0;
+  left: 30px;
+  width: 90px;
+  height: 35px;
+  background-color: #ff720f;
+}
+
+.catalog__list-item a {
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #404040;
+}
+
+.catalog__list-item-desc {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.catalog__list-item-price {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 500;
+  border-bottom: 1px solid #d8d8d8;
 }
