@@ -18,6 +18,10 @@
   @media (max-width: $desktop-width) {
     margin-top: -8px;
   }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+  }
 }
 
 .page-header__contacts {
@@ -28,12 +32,23 @@
   @media (max-width: $tablet-width-max) {
     flex-basis: 50%;
   }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    flex-basis: auto;
+  }
 }
 
 .page-header__contacts button {
   border: none;
   background-color: transparent;
   transform: translateX(-80px);
+
+  @media (max-width: $mobile-width-max) {
+    transform: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .page-header__contacts p {
@@ -63,6 +78,10 @@
   padding-top: 17px;
   padding-bottom: 20px;
   transform: translateX(-50px);
+
+  @media (max-width: $mobile-width-max) {
+    transform: none;
+  }
 }
 
 .page-header__contacts-link span {
@@ -77,6 +96,11 @@
   display: block;
   margin-top: 15px;
   width: 47px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .page-header__row {
@@ -85,6 +109,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+  }
 }
 
 .page-header__name-wrapper {
@@ -92,6 +120,12 @@
 
   @media (max-width: $desktop-width) {
     flex-basis: 40%;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-basis: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -123,6 +157,12 @@
     flex-basis: 40%;
     text-align: end;
   }
+
+  @media (max-width: $mobile-width-max) {
+    flex-basis: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .page-header__phone {
@@ -138,11 +178,23 @@
     margin-left: 70px;
     flex-basis: 40%;
   }
+
+  @media (max-width: $mobile-width-max) {
+    flex-basis: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .page-header__bascket {
   @media (max-width: $tablet-width-max) {
     flex-basis: 40%;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-basis: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -188,7 +240,8 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    width: 300px;
+    width: 200px;
+    margin-bottom: 15px;
   }
 }
 
@@ -218,6 +271,10 @@
   @media (max-width: $tablet-width-max) {
     transform: none;
     flex-basis: 40%;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-basis: auto;
   }
 }
 

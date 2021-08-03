@@ -2,6 +2,10 @@
   @media (max-width: $tablet-width-max) {
     flex-basis: 100%;
   }
+
+  @media (max-width: $mobile-width-max) {
+    flex-basis: auto;
+  }
 }
 
 .nav__list {
@@ -72,6 +76,10 @@
 
 .nav-list-footer__item {
   margin-right: 20px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-right: 0;
+  }
 }
 
 .nav-list-footer__item a {

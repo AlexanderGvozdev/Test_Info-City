@@ -7,6 +7,11 @@
   position: absolute;
   top: 39px;
   left: 213px;
+
+  @media (max-width: $mobile-width-max) {
+    top: 18px;
+    left: 30px;
+  }
 }
 
 .slider img {
