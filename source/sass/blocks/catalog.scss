@@ -14,7 +14,7 @@
   position: absolute;
   content: "";
   left: 1px;
-  bottom: 1px;
+  bottom: 0;
   width: 121px;
   height: 4px;
   background-color: #06aab5;
@@ -51,11 +51,21 @@
 
   @media (max-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 70px;
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (max-width: $tablet-width-max) {
     grid-template-columns: repeat(2, 1fr);
+    width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    grid-template-columns: 1fr;
+    width: 300px;
   }
 }
 

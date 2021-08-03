@@ -8,6 +8,10 @@
   line-height: 21px;
   font-weight: 400;
   margin-top: 10px;
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+  }
 }
 
 .copyright__link {
