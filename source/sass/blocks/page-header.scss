@@ -162,6 +162,7 @@
     flex-basis: auto;
     margin-left: auto;
     margin-right: auto;
+    transform: none;
   }
 }
 
@@ -275,9 +276,15 @@
 
   @media (max-width: $mobile-width-max) {
     flex-basis: auto;
+    column-gap: 10px;
   }
 }
 
 .page-header__social a {
   margin-right: 20px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-right: 0;
+  }
 }
+

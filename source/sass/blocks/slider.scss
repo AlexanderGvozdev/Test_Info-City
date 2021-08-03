@@ -27,7 +27,20 @@
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
+  position: relative;
 }
+
+.slider__nav-item--active::before {
+  position: absolute;
+  content: "";
+  left: -18px;
+  bottom: 2px;
+  width: 2px;
+  height: 15px;
+  background-color: white;
+  transform: rotate(15deg);
+}
+
 
 .slider__nav-item {
   color: #ff8541;

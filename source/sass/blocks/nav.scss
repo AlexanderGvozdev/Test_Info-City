@@ -78,7 +78,8 @@
   margin-right: 20px;
 
   @media (max-width: $mobile-width-max) {
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
