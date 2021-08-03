@@ -43,12 +43,27 @@
   border: none;
   background-color: transparent;
   transform: translateX(-80px);
+  position: relative;
 
   @media (max-width: $mobile-width-max) {
     transform: none;
     margin-top: 10px;
     margin-bottom: 10px;
   }
+}
+
+.page-header__contacts button::after {
+  position: absolute;
+  content: "6";
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #ff7527;
+  color: white;
+  top: -8px;
+  right: -8px;
+  padding-left: 1px;
+  padding-top: 2px;
 }
 
 .page-header__contacts p {
@@ -173,6 +188,7 @@
   text-decoration: none;
   color: black;
   transform: translateX(-39px);
+  position: relative;
 
   @media (max-width: $tablet-width-max) {
     transform: none;
@@ -187,7 +203,23 @@
   }
 }
 
+.page-header__phone::before {
+  position: absolute;
+  content: "";
+  top: -15px;
+  left: -69px;
+  width: 55px;
+  height: 55px;
+  background: url("../img/icon-phone.svg");
+
+  @media (max-width: $mobile-width-max) {
+    display: none;
+  }
+}
+
 .page-header__bascket {
+  position: relative;
+
   @media (max-width: $tablet-width-max) {
     flex-basis: 40%;
   }
@@ -199,12 +231,43 @@
   }
 }
 
-.page-header__bascket h3 {
+.page-header__bascket::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -69px;
+  width: 55px;
+  height: 55px;
+  background: url("../img/icon-basket.svg");
+
+  @media (max-width: $mobile-width-max) {
+    top: 3px;
+  }
+}
+
+.page-header__bascket::after {
+  position: absolute;
+  content: "5";
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #ff7527;
+  color: white;
+  top: 3px;
+  right: 162px;
+  padding-left: 5px;
+}
+
+.page-header__bascket a {
+  display: block;
   font-size: 14px;
   line-height: 17px;
   font-weight: 700;
   text-transform: uppercase;
-  transform: translateY(9px);
+  text-decoration: none;
+  color: black;
+  transform: translateY(14px);
+  margin-bottom: 5px;
 }
 
 .page-header__bascket p {
@@ -247,8 +310,8 @@
 }
 
 .page-header__input-wrapper button {
-  width: 50px;
-  height: 53px;
+  width: 44px;
+  height: 44px;
   background-color: #06aab5;
   border: none;
   position: absolute;
