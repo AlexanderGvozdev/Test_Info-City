@@ -15,7 +15,7 @@
 
 .page-footer__name-wrapper {
   color: white;
-  margin-left: -14px;
+  margin-left: -35px;
 
   @media (max-width: $desktop-width) {
     margin-left: 30px;
@@ -42,6 +42,10 @@
   font-weight: 400;
   margin-left: -7px;
   transform: translateY(-20px);
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: 0;
+  }
 }
 
 .page-footer__phone {
@@ -55,6 +59,7 @@
 
   @media (max-width: $desktop-width) {
     min-width: 141px;
+    margin-right: 0;
   }
 
   @media (max-width: $mobile-width-max) {
@@ -75,13 +80,13 @@
 .page-footer__social a {
   margin-right: 11px;
 
-  @media (max-width: $mobile-width-max) {
+  @media (max-width: $tablet-width-max) {
     margin-right: 0;
   }
 }
 
 .page-footer__social {
-  transform: translate(16px, 4px);
+  transform: translate(40px, 4px);
 
   @media (max-width: $desktop-width) {
     display: flex;
@@ -93,10 +98,7 @@
     transform: none;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
-  }
-
-  @media (max-width: $mobile-width-max) {
     column-gap: 5px;
+    margin-bottom: 10px;
   }
 }

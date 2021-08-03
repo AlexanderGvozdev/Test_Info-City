@@ -59,6 +59,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin-left: 40px;
+  padding-left: 0;
 
   @media (max-width: $desktop-width) {
     margin-left: 0;
@@ -74,7 +75,6 @@
   @media (max-width: $mobile-width-max) {
     width: auto;
     flex-direction: column;
-    padding-left: 0;
   }
 }
 
@@ -90,7 +90,6 @@
 .nav-list-footer__item a {
   text-decoration: none;
   color: white;
-  margin-right: 5px;
   font-size: 14px;
   line-height: 32px;
   font-weight: 700;
